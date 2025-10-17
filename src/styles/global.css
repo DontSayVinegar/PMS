@@ -14,7 +14,7 @@ body {
     left: 0;
     width: 100%;
     background: white;
-    padding: 0.5em 1em;
+    padding: 1em 1em;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
@@ -40,8 +40,8 @@ body {
     display: none;
 }
 
-/* Mobile Menu */
-.mobile-menu {
+
+.mobile-menu { 
     margin-right: 2em;
     cursor: pointer;
 }
@@ -50,7 +50,7 @@ nav.menu-btn {
     display: block;
 }
 
-/* Mobile Navigation Menu */
+
 nav {
     position: fixed;
     z-index: 999;
@@ -87,7 +87,7 @@ nav li a:hover {
     cursor: pointer;
 }
 
-/* Desktop Navigation */
+
 @media only screen and (min-width: 800px) {
     .mobile-menu,
     .mobile-menu-exit {
@@ -163,7 +163,7 @@ section {
     border-radius: 0;
 }
 
-/* Desktop Hero Layout */
+
 @media only screen and (min-width: 800px) {
     .container {
         width: 1080px;
