@@ -42,6 +42,7 @@ body {
 
 /* Mobile Menu */
 .mobile-menu {
+    margin-right: 2em;
     cursor: pointer;
 }
 
@@ -82,7 +83,7 @@ nav li a:hover {
 
 .mobile-menu-exit {
     float: right;
-    margin: 0.5em;
+    margin: .5em;
     cursor: pointer;
 }
 
@@ -154,42 +155,12 @@ section {
     margin-top: 0.2em;
 }
 
-.primary-cta {
-    background: #F29200;
-    color: white;
-    text-decoration: none;
-    padding: 0.6em 1.3em;
-    font-size: 1.4em;
-    border-radius: 5em;
-    font-weight: bold;
-    display: inline-block;
-    transition: background 0.2s ease;
-}
-
-.primary-cta:hover {
-    background: #d77e00;
-}
-
-.watch-video-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6em;
-    margin-top: 1em;
-    color: #14111C;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.watch-video-cta img {
-    height: 24px;
-}
-
 .hero-img {
     width: 60%;
     max-width: 400px;
     margin-top: 3em;
     border: #444 solid 2px;
-    border-radius: 1em;
+    border-radius: 0;
 }
 
 /* Desktop Hero Layout */
@@ -222,14 +193,5 @@ section {
     .hero-img {
         width: 30%;
         margin-right: 8em;
-    }
-
-    .hero-cta {
-        display: flex;
-        align-items: center;
-    }
-
-    .primary-cta {
-        margin-right: 1em;
     }
 }
