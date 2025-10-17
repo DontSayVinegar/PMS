@@ -1,0 +1,31 @@
+<div class="navbar">
+    <div class="container">
+        <a class="logo" href="#"><span>pms</span>.org</a>
+        <img id="mobile-cta" class="mobile-menu" src="/menu.svg" alt="Menu Icon">
+        <nav>
+            <img id="mobile-exit" class="mobile-menu-exit" src="/exit.svg" alt="close navigation">
+            <ul class="primary-nav">
+                <li class="current"><a href="index.html">O nás</a></li>
+                <li><a href="online_kolo.html">Výkonná rada</a></li>
+                <li><a href="finalove_kolo.html">Kontakty</a></li>
+                <li><a href="hlavni_ceny.html">Staň se členem</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<script>
+    const mobileBtn = document.getElementById('mobile-cta');
+    const nav = document.querySelector('nav');
+    const mobileBtnExit = document.getElementById('mobile-exit');
+
+    if (mobileBtn && nav && mobileBtnExit) {
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        });
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        });
+    }
+</script>     

@@ -1,16 +1,22 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="cz">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Nový Porg Medical Society</title>
-	</head>
-	<body>
-		<h1>PMS</h1>
-	</body>
-</html>
+<BaseLayout pageTitle={"Porg Medical Society"}>
+	<section class="hero">
+		<div class="container">
+			<div class="left-col">
+				<p class="subhead">Pre menstrual syndrom</p>
+				<h1>Porg Medical Society</h1>
+
+				<div class="hero-cta">
+					<a class="primary-cta" href="#bottom">Přihlásit se</a>
+					<a class="watch-video-cta" href="https://www.youtube.com/watch?v=oR3lmIv7Ah8">
+						<img src="/watch.svg" alt="Watch a video">Mrkni se 
+					</a>
+				</div>
+			</div>
+			<img class="hero-img" src="/pmsLogo.png" alt="PMS logo">
+		</div>
+	</section>
+</BaseLayout>

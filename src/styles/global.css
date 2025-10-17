@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Base Styles */
+body {
+    background: #F2F2F2;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 0.5em 1em;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.navbar .logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+
+.navbar .logo span {
+    color: #0e42fb;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar nav {
+    display: none;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    cursor: pointer;
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+/* Mobile Navigation Menu */
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: #14111C;
+    height: 100vh;
+    padding: 1em;
+}
+
+nav ul.primary-nav {
+    margin-top: 5em;
+    list-style: none;
+    padding: 0;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    font-size: 1.3em;
+    text-align: right;
+}
+
+nav li a:hover {
+    font-weight: bold;
+}
+
+.mobile-menu-exit {
+    float: right;
+    margin: 0.5em;
+    cursor: pointer;
+}
+
+/* Desktop Navigation */
+@media only screen and (min-width: 800px) {
+    .mobile-menu,
+    .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 180px auto;
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navbar nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar nav a {
+        color: black;
+        font-size: 1em;
+        padding: 0.1em 1em;
+        text-decoration: none;
+    }
+
+    .navbar nav li.current a {
+        font-weight: bold;
+    }
+}
+
+/* Hero Section */
+section {
+    padding: 7em 2em 5em;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero .container {
+    margin-top: 3em;
+}
+
+.left-col .subhead {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray;
+    letter-spacing: 0.3em;
+    margin-bottom: 0.5em;
+}
+
+.left-col h1 {
+    font-size: 2.5em;
+    line-height: 1.3em;
+    margin-top: 0.2em;
+}
+
+.primary-cta {
+    background: #F29200;
+    color: white;
+    text-decoration: none;
+    padding: 0.6em 1.3em;
+    font-size: 1.4em;
+    border-radius: 5em;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.2s ease;
+}
+
+.primary-cta:hover {
+    background: #d77e00;
+}
+
+.watch-video-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6em;
+    margin-top: 1em;
+    color: #14111C;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.watch-video-cta img {
+    height: 24px;
+}
+
+.hero-img {
+    width: 60%;
+    max-width: 400px;
+    margin-top: 3em;
+    border: #444 solid 2px;
+    border-radius: 1em;
+}
+
+/* Desktop Hero Layout */
+@media only screen and (min-width: 800px) {
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 10em 4em 6em;
+    }
+
+    .hero .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .left-col {
+        margin: 3em 3em 0 5em;
+    }
+
+    .left-col h1 {
+        font-size: 3em;
+        width: 90%;
+    }
+
+    .hero-img {
+        width: 30%;
+        margin-right: 8em;
+    }
+
+    .hero-cta {
+        display: flex;
+        align-items: center;
+    }
+
+    .primary-cta {
+        margin-right: 1em;
+    }
+}
