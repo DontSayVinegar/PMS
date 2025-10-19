@@ -24,7 +24,7 @@ import { Icon } from "astro-icon/components";
 		<div class="absolute top-[-85%] right-[-30%] w-[85%] h-full bg-gradient-to-b from-orange-300 via-indigo-300 to-transparent rounded-full opacity-60 dark:opacity-5"></div>
 	</div>
 	
-	<div class="w-full justify-between sm:flex-col">
+	<div class="flex w-full justify-between sm:flex-col">
 		<div class="flex items-center gap-x-2">
 			<a
 				aria-label={siteConfig.title}
@@ -35,24 +35,25 @@ import { Icon } from "astro-icon/components";
 				<!-- Logo -->
 				<!--
 				<div class="pt-1.5">
-					<svg class="inline-block size-8 fill-current text-accent-base drop-shadow-[0px_2.5px_2.5px_rgba(0,0,0,0.35)]">
-						<use href="/brand.svg#brand"></use>
-					</svg>
+					<img src="brand.svg" alt="brand logo" width="80">
 				</div>
 				-->
+
+				
+				<!-- 
 				<div title={siteConfig.title}>
 					<svg class="inline-block size-8 fill-current text-accent-base dark:text-accent-two drop-shadow-[0px_2.5px_2.5px_rgba(0,0,0,0.35)]">
 						<use href="/brand.svg#citrus"></use>
 					</svg>
 				</div>
-				
+				-->
 				<strong class="'max-[320px]:hidden' bg-clip-text text-transparent bg-gradient-to-r from-accent-one to-accent-two hidden xs:block z-10 mb-0.5 ms-2 text-2xl group-hover:text-accent-one">
 					{siteConfig.title}
 				</strong>
 			</a>
 			<nav
 				aria-label="Main menu"
-				class="top-20 text-sm mx-auto ml-4 ml-auto hidden flex-col items-end justify-center gap-x-4 rounded-md bg-bgColor font-medium text-accent-two shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:flex-row sm:items-center sm:rounded-none sm:bg-transparent sm:shadow-none sm:backdrop-blur-none md:flex"
+				class="top-20 text-sm ml-4 ml-auto hidden flex-col items-center justify-end gap-x-4 rounded-md bg-bgColor font-medium text-accent-two shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:flex-row sm:items-center sm:rounded-none sm:bg-transparent sm:shadow-none sm:backdrop-blur-none md:flex"
 				id="main-navigation-menu"
 			>	
 				<!--				
@@ -94,12 +95,13 @@ import { Icon } from "astro-icon/components";
 					))
 				}
 				
+
 				<a
 					class="flex h-8 items-center rounded-lg bg-accent-base/5 px-4 text-accent-base underline-offset-2 hover:bg-accent-base/10"
 					data-astro-prefetch
 					href="/posts/citrus-docs/intro/"
 				>
-					Docs
+					Staň se členem
 				</a>
 				
 				<!-- Dropdown menu button for large screens. Needs improvement. -->
@@ -152,14 +154,14 @@ import { Icon } from "astro-icon/components";
 				</div>
 			</div>
 			-->
-
+			<!--
 			<div class="ml-auto w-fit">
 				<div id="buttons-panel" class="top-4 md:top-8 -ml-[4.5rem] flex space-x-2">
 					<Search />
 					<ThemeToggle />
 				</div>
 			</div>	
-			
+			-->
 			<mobile-button
 				aria-expanded="false"
 				aria-haspopup="menu"

@@ -97,7 +97,7 @@ export default {
       },
       fontFamily: {
         // Add any custom fonts here
-        sans: ["SFProRounded", ...fontFamily.sans],
+        sans: ["sans-serif", "SFProRounded", ...fontFamily.sans],
         serif: ["CascadiaCode", ...fontFamily.serif],
       },
       transitionProperty: {
