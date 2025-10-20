@@ -25,11 +25,11 @@ import { Icon } from "astro-icon/components";
 	</div>
 	
 	<div class="flex w-full justify-between sm:flex-col">
-		<div class="flex items-center gap-x-2">
+		<div class="flex items-center gap-x-2 w-full min-w-0">
 			<a
 				aria-label={siteConfig.title}
 				aria-current={Astro.url.pathname === "/" ? "page" : false}
-				class="group flex h-8 items-center hover:filter-none sm:relative"
+				class="group flex h-8 flex-1 items-center hover:filter-none sm:relative min-w-0 pr-2"
 				href="/"
 			>	
 				<!-- Logo -->
@@ -47,9 +47,9 @@ import { Icon } from "astro-icon/components";
 					</svg>
 				</div>
 				-->
-				<strong class="'max-[320px]:hidden' bg-clip-text text-transparent bg-gradient-to-r from-accent-one to-accent-two hidden xs:block z-10 mb-0.5 ms-2 text-2xl group-hover:text-accent-one">
-					{siteConfig.title}
-				</strong>
+					<strong class="'max-[320px]:hidden' bg-clip-text text-transparent bg-gradient-to-r from-accent-one to-accent-two hidden xs:block z-10 mb-0.5 ms-2 text-lg xs:text-xl sm:text-2xl group-hover:text-accent-one">
+						{siteConfig.title}
+					</strong>
 			</a>
 			<nav
 				aria-label="Main menu"
@@ -166,7 +166,7 @@ import { Icon } from "astro-icon/components";
 				aria-expanded="false"
 				aria-haspopup="menu"
 				aria-label="Open main menu"
-				class="group relative h-8 w-8 rounded-lg bg-color-100 hover:bg-accent-base/10 text-accent-base md:invisible md:hidden"
+				class="group relative h-8 w-8 flex-shrink-0 rounded-lg bg-color-100 hover:bg-accent-base/10 text-accent-base ml-auto md:invisible md:hidden"
 				id="toggle-nav-menu-mobile"
 				type="button"
 			>
@@ -295,6 +295,3 @@ import { Icon } from "astro-icon/components";
 		});
 	});
 </script>
-
-
-

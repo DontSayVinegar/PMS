@@ -30,18 +30,15 @@ const latestNotes = allNotes.sort(collectionDateSort).slice(0, MAX_NOTES);
 		<div class="absolute top-[-20%] right-[-50%] w-[85%] h-full bg-gradient-to-b from-orange-300 via-indigo-300 to-transparent rounded-full opacity-60 dark:opacity-10"></div>
 	</div>
 	<section class="w-full mx-auto relative flex items-center justify-center h-screen -mt-24">
-		<div class="w-full text-center flex justify-center gap-[50px]">
-			<div class="flex justify-center flex-col">
+		<div class="w-full text-center flex flex-col justify-center gap-[50px]">
+			<div class="flex flex-col items-center px-4 sm:px-6">
 				<!--For gradient insert this into span: bg-gradient-to-r from-accent-two/85 to-accent-one/85 bg-clip-text text-transparent-->
-				<span class="title text-5xl font-bold leading-tight overflow-visible dark:from-accent-two dark:via-accent-one dark:to-accent-two ">
-					PORG<br />Medical Society
+				<span class="title block max-w-3xl text-4xl sm:text-5xl md:text-6xl font-bold leading-tight overflow-visible mx-auto dark:from-accent-two dark:via-accent-one dark:to-accent-two ">
+					Sdružujeme elistické nepo babies již od roku 2025
 				</span>
-				<p class="mt-4 mb-4 text-lg font-medium ">
-					Sdružení studentů lékařských fakult z PORGu
-				</p>
 			</div>
 			<div class="flex justify-center">
-				<img src="/brand.svg" width="300">
+				<img src="/brand.svg" class="w-40 sm:w-56 md:w-72 lg:w-80 max-w-full h-auto" alt="Brand logo">
 			</div>
 			<!--
 			<div class="flex justify-center space-x-4 mt-4">
@@ -131,4 +128,3 @@ const latestNotes = allNotes.sort(collectionDateSort).slice(0, MAX_NOTES);
 	</div>
 	-->
 </PageLayout>
-
