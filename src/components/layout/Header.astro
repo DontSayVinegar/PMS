@@ -13,6 +13,7 @@ import { Icon } from "astro-icon/components";
 			TODO: This approach is not optimal and requires improvements. 
   			- Too many absolutely positioned elements can affect performance. 
   		-->	
+	<!-- 
 	<div class="md:hidden absolute top-0 left-1/2 -ml-[50vw] w-screen min-h-screen pointer-events-none blur-2xl">
 		<div class="absolute top-[-90%] right-[25%] w-[75%] h-full bg-gradient-to-b from-blue-300 via-pink-300 to-transparent rounded-full opacity-40 dark:opacity-5"></div>
 		<div class="absolute top-[-90%] left-[25%] w-[75%] h-full bg-gradient-to-b from-blue-300 via-pink-300 to-transparent rounded-full opacity-40 dark:opacity-5"></div>
@@ -22,7 +23,7 @@ import { Icon } from "astro-icon/components";
 		<div class="absolute top-[-75%] right-[-25%] w-[65%] h-full bg-gradient-to-b from-purple-300 via-blue-300 to-transparent rounded-full opacity-30 dark:opacity-5"></div>
 		<div class="absolute top-[-85%] left-[-30%] w-[85%] h-full bg-gradient-to-b from-indigo-300 via-orange-300 to-transparent rounded-full opacity-60 dark:opacity-5"></div>
 		<div class="absolute top-[-85%] right-[-30%] w-[85%] h-full bg-gradient-to-b from-orange-300 via-indigo-300 to-transparent rounded-full opacity-60 dark:opacity-5"></div>
-	</div>
+	</div> -->
 	
 	<div class="flex w-full justify-between sm:flex-col">
 		<div class="flex items-center gap-x-2 w-full min-w-0">
@@ -47,7 +48,7 @@ import { Icon } from "astro-icon/components";
 					</svg>
 				</div>
 				-->
-					<strong class="'max-[320px]:hidden' bg-clip-text text-transparent bg-gradient-to-r from-accent-one to-accent-two hidden xs:block z-10 mb-0.5 ms-2 text-lg xs:text-xl sm:text-2xl group-hover:text-accent-one">
+					<strong class="'max-[320px]:hidden' bg-clip-text text-transparent bg-gradient-to-r from-accent-two to-accent-one hidden xs:block z-10 mb-0.5 ms-2 text-lg xs:text-xl sm:text-2xl group-hover:text-accent-two">
 						{siteConfig.title}
 					</strong>
 			</a>

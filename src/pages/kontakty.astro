@@ -1,0 +1,75 @@
+---
+import PageLayout from "@/layouts/Base.astro";
+
+const teamMembers = [
+	{
+		name: "Dr. Erik Liu",
+		role: "CEO & Co-founder",
+		bio: "Přináší strategickou vizi a pečuje o naše klíčové partnery i komunitu.",
+        image: "/lidi/erikliu.jpg"
+	},
+	{
+		name: "doc. Jakub Kolář",
+		role: "Program Director",
+		bio: "Vede programy pro členy a koordinuje spolupráci se startupovými inkubátory.",
+        image: "/lidi/jakubkolar.jpg"
+	},
+	{
+		name: "Chris Dita",
+		role: "Community Lead",
+		bio: "Buduje bezpečné prostředí pro sdílení znalostí a networking našich členů.",
+        image: "/lidi/chrisditta.png"
+	},
+	{
+		name: "Magdalena Černíková",
+		role: "Operations Manager",
+		bio: "Zajišťuje hladký chod organizace a pomáhá s logistikou našich akcí.",
+        image: "/lidi/majdacernikova.jpg"
+	},
+    {
+        name: "Richard Šiser",
+        role: "Chief Engineer",
+        bio: "Vede náš tým vysoce zkušených inženýrů, zajištující bezproblémový chod akcí.",
+        image: "/lidi/richardsiser.jpg"
+    },
+    {
+        name: "Denis Kurpiers",
+        role: "Honorary Member",
+        bio: "Dali jsme mu membership aby se nezlobil.",
+        image: "/lidi/deniskurpiers.jpg"
+    }
+];
+---
+
+<PageLayout meta={{ title: "Home" }}>
+	<section class="w-full mx-auto relative flex items-center justify-center">
+		<div class="w-full text-center flex flex-col justify-center gap-[20px]">
+            <!--
+			<h1 class="title mt-2 text-3xl sm:text-4xl md:text-5xl font-bold text-accent-base">
+					Poznejte lidi za projektem
+			</h1> -->
+			<div class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 xl:grid-cols-3 -mt-10">
+				{
+					teamMembers.map((member) => (
+						<article class="flex flex-col rounded-2xl bg-bgColor/80 p-6 transition hover:-translate-y-1 hover:shadow-md dark:bg-bgColor">
+							<div class="flex items-center justify-center gap-4">
+								<div>
+									<h3 class="text-lg font-semibold text-accent-two">
+										{member.name}
+									</h3>
+                                    <img class="rounded-lg" src={member.image} alt={member.name} width="200px">
+									<p class="text-sm text-accent-base/80">
+										{member.role}
+									</p>
+								</div>
+							</div>
+							<p class="text-sm leading-relaxed text-accent-two/80">
+								{member.bio}
+							</p>
+						</article>
+					))
+				}
+			</div>
+		</div>
+	</section>
+</PageLayout>

@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @font-face {
+	font-family: "Causten";
+	src: url("../assets/fonts/CaustenBoldRound.otf") format("opentype");
+	font-weight: bold;
+}
+
+@font-face {
 	font-family: "SFProRounded";
 	src: url("../assets/fonts/SF-Pro-Rounded-Regular.latin.base.ttf") format("truetype");
 	font-weight: 400;
@@ -84,7 +90,7 @@
 		
 		/*** ОСНОВНЫЕ ЦВЕТА (Базовый, фон, акценты, текст) ***/
 		/* Базовый цвет-оттенок темы */
-		--hue: 200deg; /* Общий базовый цвет-оттенок элементов темы */
+		--hue: 218deg; /* Общий базовый цвет-оттенок элементов темы */
 		--saturation: 10%; /* Общая базовая насыщенность элементов темы, 0% - нет оттенка цвета */
 		
 		/* Фон (background) */
@@ -93,9 +99,9 @@
 		--bg-brightness: 96%; /* Ярксть фона, 100% - абсолюнто белый */
 
 		/* Акценты */
-		--theme-accent-base: var(--bg-hue) 53% 27%; /* Основной акцентный цвет */
-		--theme-accent-one: var(--bg-hue) 53% 27%; /* Первый дополнительный акцентный цвет */
-		--theme-accent-two: 351deg 66% 48%; /* Второй дополнительный акцентный цвет */
+		--theme-accent-base: var(--bg-hue) 67.6% 0%; /* Основной акцентный цвет */
+		--theme-accent-one: var(--bg-hue) 67.6% 43.5%; ; /* Первый дополнительный акцентный цвет */
+		--theme-accent-two: 244deg 81.1% 30.3%; /* Второй дополнительный акцентный цвет */
 		
 		/* Вариант */ /* --theme-accent-two: 344deg 63% 45%; */
 		

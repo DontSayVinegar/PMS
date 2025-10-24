@@ -30,10 +30,10 @@ export const menuLinks: { path: string; title: string }[] = [
 	},
 	{
 		path: "/posts/",
-		title: "Výkonná rada",
+		title: "Akce",
 	},
 	{
 		path: "/kontakty/",
-		title: "Kontakty"
+		title: "Komise"
 	}
 ];
