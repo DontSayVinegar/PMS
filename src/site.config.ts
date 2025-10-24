@@ -30,7 +30,7 @@ export const menuLinks: { path: string; title: string }[] = [
 	},
 	{
 		path: "/posts/",
-		title: "Akce",
+		title: "Aktuality",
 	},
 	{
 		path: "/kontakty/",

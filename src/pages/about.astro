@@ -2,37 +2,60 @@
 import PageLayout from "@/layouts/Base.astro";
 
 const meta = {
-	description: "I'm a starter theme for Astro.build",
+	description: "Porg medical society at your service",
 	title: "About",
 };
 ---
 
 <PageLayout meta={meta}>
 
-	<h1 class="title mb-6">Kdo jsme</h1>
-	<div class="prose prose-citrus max-w-none">
+	<h1 class="title mb-6 uppercase">VIZE</h1>
+	<div class="prose prose-citrus max-w-none space-y-4">
 		<p>
-			Jsme spolek sdružující studenty lékařských fakult, jejichž rodiče vlastní majetek v hodnotě přesahující 100000000CZK.
+			Naší vizí je vytvořit živou a otevřenou komunitu studentů a absolventů medicínských i nelékařských oborů s kořeny v prostředí <span class="text-accent-two">PORGu</span>, kterou spojuje zájem o zdraví, vědu a vzájemný rozvoj.
 		</p>
-		<p>Co děláme:</p>
-		<ul class="list-inside list-disc" role="list">
-			<li>Organizujeme networkingové akce</li>
-			<li>Spravujeme investiční fond (dceřiná společnost PMS Finance)</li>
-			<li>Provádíme experimentální operace na vězních</li>
-			<li>Vyvýjíme biologické zbraně</li>
-			<li>Doučujeme studenty medicíny</li>
-			<li>Chlastáme</li>
-			<li>Posouváme lidstvo dopředu</li>
-		</ul>
 		<p>
-			Přidej se k <a
-				aria-label="github repository"
-				class="citrus-link inline-block"
-				href="/posts/citrus-docs/intro"
-				rel="noreferrer"
-				target="_blank">nám</a
-			>, pokud by ses chtěl podílet na tomto zázraku!
+			Chceme propojovat lidi napříč univerzitami, městy i zeměmi, podporovat přirozené spojení odborného růstu s osobními vztahy a otevřít dveře k bohatšímu studentskému životu.
 		</p>
+		<p>
+			Usilujeme o to, aby <span class="text-accent-two">PMS</span> byla místem, kam se lidé rádi vrací – kde vznikají přátelství, spolupráce i nové nápady.
+		</p>
+		<p>
+			Naším cílem je stát se jedním z <strong class="text-accent-two">nejrespektovanějších studentských spolků</strong>.
+		</p>
+	</div>
+
+	<section class="mt-12">
+		<h1 class="title mb-4 text-2xl uppercase">MISE</h1>
+		<div class="prose prose-citrus max-w-none space-y-4">
+			<p>
+				Posláním <span class="text-accent-two">PMS</span> je podporovat a propojovat další generaci zdravotnických pracovníků prostřednictvím vzdělávacích, kulturních a společenských aktivit.
+			</p>
+			<p>
+				Pomáháme studentům s přechodem ze střední na vysokou školu, z privátního do univerzitního prostředí, i s orientací v oboru díky mentoringu, sdílení zkušeností a otevřenému networkingu.
+			</p>
+			<p>
+				Organizujeme workshopy, diskusní večery, přednášky, neformální setkání i výjezdy, které spojují lidi napříč medicínou a dalšími nelékařskými obory.
+			</p>
+			<p>
+				Chceme, aby <span class="text-accent-two">PMS</span> byla nejen vzdělávací platformou, ale i místem pro zábavu, sport a vzájemnou podporu.
+			</p>
+			<p>
+				Fungujeme transparentně, demokraticky a s respektem – každý člen má prostor pro nápady, zpětnou vazbu i vlastní iniciativu.
+			</p>
+			<p>
+				Naším dlouhodobým cílem je vytvořit komunitu s mezinárodním dosahem, která propojuje české i zahraniční studenty a absolventy <span class="text-accent-two">PORGu</span>, sdílí inspiraci, zkušenosti a hodnoty, jež formují lékaře a odborníky budoucnosti.
+			</p>
+		</div>
+	</section>
+
+	<div class="mt-10 flex">
+		<a
+			class="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-accent-one to-accent-two px-6 py-3 font-semibold text-bgColor shadow-lg shadow-accent-one/30 transition hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-two"
+			href="/stanovy/"
+		>
+			Přečíst stanovy
+		</a>
 	</div>
 
 </PageLayout>
