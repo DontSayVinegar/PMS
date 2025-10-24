@@ -55,7 +55,7 @@ importers:
         version: 3.0.0
       rehype-pretty-code:
         specifier: ^0.14.0
-        version: 0.14.0(shiki@3.13.0)
+        version: 0.14.0(shiki@0.9.15)
       rehype-unwrap-images:
         specifier: ^1.0.0
         version: 1.0.0
@@ -126,6 +126,9 @@ importers:
       reading-time:
         specifier: ^1.5.0
         version: 1.5.0
+      shiki:
+        specifier: ^0.9.15
+        version: 0.9.15
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.17
@@ -2994,6 +2997,9 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
+  shiki@0.9.15:
+    resolution: {integrity: sha512-/Y0z9IzhJ8nD9nbceORCqu6NgT9X6I8Fk8c3SICHI5NbZRLdZYFaB233gwct9sU0vvSypyaL/qaKvzyQGJBZSw==}
+
   shiki@3.13.0:
     resolution: {integrity: sha512-aZW4l8Og16CokuCLf8CF8kq+KK2yOygapU5m3+hoGw0Mdosc6fPitjM+ujYarppj5ZIKGyPDPP1vqmQhr+5/0g==}
 
@@ -3492,6 +3498,12 @@ packages:
 
   vscode-nls@5.2.0:
     resolution: {integrity: sha512-RAaHx7B14ZU04EU31pT+rKz2/zSl7xMsfIZuo8pd+KZO6PXtQmpevpq3vxvWNcrGbdmhM/rr5Uw5Mz+NBfhVng==}
+
+  vscode-oniguruma@1.7.0:
+    resolution: {integrity: sha512-L9WMGRfrjOhgHSdOYgCt/yRMsXzLDJSL7BPrOZt73gU0iWO4mpqzqQzOz5srxqTvMBaR0XZTSrVWo4j55Rc6cA==}
+
+  vscode-textmate@5.2.0:
+    resolution: {integrity: sha512-Uw5ooOQxRASHgu6C7GVvUxisKXfSgW4oFlO+aa+PAkgmH89O3CXxEEzNRNtHSqtXFTl0nAC1uYj0GMSH27uwtQ==}
 
   vscode-uri@3.1.0:
     resolution: {integrity: sha512-/BpdSx+yCQGnCvecbyXdxHDkuk55/G3xwnC0GqY4gmQ3j+A+g8kzzgB4Nk/SINjqn6+waqw3EgbVF2QKExkRxQ==}
@@ -6736,13 +6748,13 @@ snapshots:
       hast-util-from-html: 2.0.3
       unified: 11.0.5
 
-  rehype-pretty-code@0.14.0(shiki@3.13.0):
+  rehype-pretty-code@0.14.0(shiki@0.9.15):
     dependencies:
       '@types/hast': 3.0.4
       hast-util-to-string: 3.0.1
       parse-numeric-range: 1.3.0
       rehype-parse: 9.0.1
-      shiki: 3.13.0
+      shiki: 0.9.15
       unified: 11.0.5
       unist-util-visit: 5.0.0
 
@@ -7025,6 +7037,12 @@ snapshots:
       shebang-regex: 3.0.0
 
   shebang-regex@3.0.0: {}
+
+  shiki@0.9.15:
+    dependencies:
+      jsonc-parser: 3.3.1
+      vscode-oniguruma: 1.7.0
+      vscode-textmate: 5.2.0
 
   shiki@3.13.0:
     dependencies:
@@ -7527,6 +7545,10 @@ snapshots:
       vscode-languageserver-protocol: 3.17.5
 
   vscode-nls@5.2.0: {}
+
+  vscode-oniguruma@1.7.0: {}
+
+  vscode-textmate@5.2.0: {}
 
   vscode-uri@3.1.0: {}
 
