@@ -1,5 +1,5 @@
 ---
-title: Porg Medical Socity 
+title: Porg Medical Society 
 publishDate: "2025-02-27T22:09:00Z"
 ---
 
