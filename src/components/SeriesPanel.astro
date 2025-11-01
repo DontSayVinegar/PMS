@@ -9,7 +9,7 @@ const posts = await getCollection("post");
 const series = await getCollection("series");
 
 // Находим серию по переданному `seriesId` указанному в посте
-const postsSeries = series.find((s) => s.id === seriesId);
+const postsSeries = series.find((s) => s.id === seriesId || s.slug === seriesId);
 if (!postsSeries) {
   	throw new Error(`Post(s) with Series ID '${seriesId}' not found.`);
 }
@@ -20,6 +20,14 @@ if (seriesId) {
 	seriesPosts = posts
 		.filter((p) => p.data.seriesId === seriesId)
 		.sort((a, b) => (a.data.orderInSeries || 0) - (b.data.orderInSeries || 0));
+}
+
+function getPostSlug(entry: CollectionEntry<"post">) {
+	return entry.slug ?? entry.id;
+}
+
+function getSeriesSlug(entry: CollectionEntry<"series">) {
+	return entry.slug ?? entry.id;
 }
 ---
 
@@ -49,7 +57,7 @@ if (seriesId) {
 		<div class="sticky top-8">
 			{postsSeries.id ? (
 				<a 
-					href={`/series/${postsSeries.id}`} 
+					href={`/series/${getSeriesSlug(postsSeries)}`} 
 					aria-label={`About ${postsSeries.data.title} series`}
 					class="sticky top-4 flex h-8 w-full items-center justify-center gap-x-1 rounded-lg shadow-lg bg-accent-base font-medium text-bgColor hover:brightness-110 transition-all duration-300"
 				>
@@ -59,11 +67,12 @@ if (seriesId) {
 
 				<ul class="mt-[1.0625rem] text-sm font-medium text-light">
 					{seriesPosts.map((p) => {
-						const isActive = currentPath === `/posts/${p.id}/`;
+						const slug = getPostSlug(p);
+						const isActive = currentPath === `/posts/${slug}/`;
 						return (
 							<li class={`px-4 flex items-center line-clamp-2 pt-1 pb-1 ${isActive ? "rounded-lg bg-color-100" : ""}`}>
 								<a
-									href={`/posts/${p.id}/`}
+									href={`/posts/${slug}/`}
 									class={`hover:text-accent-two ${isActive ? "text-accent cursor-default pointer-events-none" : ""}`}
 								>
 									{p.data.title}

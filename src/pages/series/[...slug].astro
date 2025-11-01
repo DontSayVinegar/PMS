@@ -8,7 +8,7 @@ import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
 export const getStaticPaths = (async () => {
 	const allSeries = await getCollection("series");
 	return allSeries.map((series) => ({
-		params: { slug: series.id },
+		params: { slug: series.slug },
 		props: { series },
 	}));
 }) satisfies GetStaticPaths;

@@ -156,14 +156,14 @@ export async function getStaticPaths() {
     .flatMap((post) => {
       return [
         {
-          params: { slug: post.id, ext: "png" },
+          params: { slug: post.slug, ext: "png" },
           props: {
             pubDate: post.data.updatedDate ?? post.data.publishDate,
             title: post.data.title,
           },
         },
         {
-          params: { slug: post.id, ext: "svg" },
+          params: { slug: post.slug, ext: "svg" },
           props: {
             pubDate: post.data.updatedDate ?? post.data.publishDate,
             title: post.data.title,

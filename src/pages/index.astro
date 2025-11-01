@@ -62,7 +62,7 @@ const latestNotes = allNotes.sort(collectionDateSort).slice(0, MAX_NOTES);
 	<!-- Posts Section -->
 	<section aria-label="Blog post list" class="'mt-[-100vh] pt-[100vh]'">
 		<h2 class="title mb-6 text-xl text-accent-two">
-			<a href="/posts/">Akce</a>
+			<a href="/posts/">Aktuality</a>
 		</h2>
 		<ul class="space-y-4 md:space-y-2" role="list">
 			{
@@ -76,6 +76,7 @@ const latestNotes = allNotes.sort(collectionDateSort).slice(0, MAX_NOTES);
 	</section>
 
 	<!-- Notes Section -->
+	<!-- -->
 	{
 		latestNotes.length > 0 && (
 			<section class="mt-12">

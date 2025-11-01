@@ -32,15 +32,7 @@ tags: ["ustanovení", "zákon"]
 
 **V Praze, dne 4. října 2025**
 
-
-**……………………………………**  
 **Jakub Kolář** – Předseda  
-
-**……………………………………**  
 **Erik Liu** – GenSec  
-
-**……………………………………**  
 **Christian Dita** – PR Officer  
-
-**……………………………………**  
 **Magdaléna Černíková** – Koordinátorka  

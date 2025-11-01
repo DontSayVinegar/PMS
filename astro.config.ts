@@ -7,6 +7,8 @@ import robotsTxt from "astro-robots-txt";
 import webmanifest from "astro-webmanifest";
 import { defineConfig, envField } from "astro/config";
 import { siteConfig } from "./src/site.config";
+import rosePine from "./node_modules/.pnpm/@shikijs+themes@3.13.0/node_modules/@shikijs/themes/dist/rose-pine.mjs";
+import rosePineDawn from "./node_modules/.pnpm/@shikijs+themes@3.13.0/node_modules/@shikijs/themes/dist/rose-pine-dawn.mjs";
 
 // Remark plugins
 import remarkDirective from "remark-directive"; /* handle ::: directives as nodes */
@@ -102,8 +104,8 @@ export default defineConfig({
         rehypePrettyCode,
         {
           theme: {
-            light: "rose-pine-dawn", // after changing the theme, the server needs to be restarted
-            dark: "rose-pine", // after changing the theme, the server needs to be restarted
+            light: rosePineDawn,
+            dark: rosePine,
           },
 
           transformers: [transformerNotationDiff(), transformerMetaHighlight()],

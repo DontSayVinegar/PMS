@@ -31,6 +31,7 @@ const postSeries = content.data.seriesId
             return null;
           })
     : null;
+const postSeriesSlug = postSeries?.slug ?? postSeries?.id;
 ---
 
 <div class="md:sticky md:top-8 md:z-10 flex items-end">
@@ -140,7 +141,7 @@ const postSeries = content.data.seriesId
 				<Icon aria-hidden="true" class="flex-shrink-0 inline-block h-6 w-6 text-accent-base" focusable="false" name="solar:notes-line-duotone" />
 				<a 
 					aria-label={`About ${postSeries.data.title} series`} 
-					href={`/series/${postSeries.id}`}
+					href={`/series/${postSeriesSlug}`}
 					class="flex items-center gap-2 flex-wrap"
 				>
 					<Badge variant="accent-base" showHash={false} title={postSeries.data.title} />
